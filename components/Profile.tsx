@@ -3,10 +3,14 @@ import Image from "next/image"
 import mypic from '../public/mypic.jpeg'
 import BackgroundCircles from "./BackgroundCircles"
 import Link from "next/link"
+import { Page } from "../typings"
+import { urlFor } from "../sanity"
 
-type Props = {}
+type Props = {
+  page: Page
+}
 
-export default function Profile({}: Props) {
+export default function Profile({ page }: Props) {
 
     const [text, setText] = useTypewriter({
         words: ['Hi, Sarthak this side!!',
@@ -22,13 +26,13 @@ export default function Profile({}: Props) {
       <Image 
         className="relative h-40 w-40 rounded-full mx-auto object-cover"
         alt="/"
-        src={mypic}
+        src={urlFor(page?.heroImage).url()}
         height={400}
         width={400}
        />
       <div className="z-20">
-       <h2 className="uppercase text-sm text-blue-200 pb-5 tracking-widest ">Developer</h2>
-       <h1 className="text-5xl lg:text-3xl font-sans font-semibold px-10">
+       <h2 className="uppercase text-sm text-blue-200 pb-5 tracking-widest ">{page?.role}</h2>
+       <h1 className="text-5xl lg:text-3xl font-sans font-semibold px-10 text-yellow-300">
         <span className="font-bold">{text}</span>
         <Cursor cursorColor="#FB923C"/>
        </h1>

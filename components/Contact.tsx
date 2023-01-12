@@ -1,8 +1,11 @@
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
+import { Page } from "../typings"
 
-type Props = {}
+type Props = {
+  page: Page;
+}
 
 type Inputs = {
   name: string,
@@ -11,7 +14,7 @@ type Inputs = {
   message: string
 }
 
-export default function Contact({}: Props) {
+export default function Contact({ page }: Props) {
 
   const [write, setWrite ] = useTypewriter({
      words: ['Lets Connect'],
@@ -41,21 +44,21 @@ export default function Contact({}: Props) {
         <div className='space-y-5'>
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className="text-blue-300 h-10 w-10 animate-pulse" />
-            <p className="text-xl">+91 9868757238</p>
+            <p className="text-xl">{page?.phoneNumber}</p>
           </div>
         </div>
 
         <div className="space-y-5">
           <div className='flex items-center space-x-5 justify-center'>
             <EnvelopeIcon className="text-blue-300 h-10 w-10 animate-pulse" />
-            <p className="text-xl">sarthak2002tyagi@gmail.com</p>
+            <p className="text-xl">{page?.email}</p>
           </div>
         </div>
 
         <div className="space-y-5">
           <div className='flex items-center space-x-5 justify-center'>
             <MapPinIcon className="text-blue-300 h-10 w-10 animate-pulse" />
-            <p className="text-xl">Essen House, Stanza living, Chennai-600089</p>
+            <p className="text-xl">{page?.address}</p>
           </div>
         </div>
 

@@ -5,6 +5,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['pbs.twimg.com', 'cdn.britannica.com', 'www.citypng.com']
+    domains: ['pbs.twimg.com', 'cdn.britannica.com', 'www.citypng.com', 'cdn.sanity.io']
   }
 }

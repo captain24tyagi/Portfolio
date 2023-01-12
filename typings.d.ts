@@ -36,6 +36,7 @@ export interface Skill extends SanityBody {
 }
 
 export interface Technology extends SanityBody {
+    map(): import("react").ReactNode;
     _type: 'skill';
     title: string;
     progress: number;

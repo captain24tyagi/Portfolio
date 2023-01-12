@@ -27,24 +27,16 @@ export default function Header({ socials }: Props) {
             
             className='flex flex-row items-center'
            >
-            <SocialIcon
-              url="https://www.instagram.com/captain24tyagi/"
-              fgColor="white"
-              bgColor="transparent"
-            />
+            {socials.map((social) => (
+               <SocialIcon
+               key={social._id}
+               url={social.url}
+               fgColor="white"
+               bgColor="transparent"
+             />
+            ))}
 
-            <SocialIcon
-              url="https://www.instagram.com/captain24tyagi/"
-              fgColor="white"
-              bgColor="transparent"
-            />
-
-            <SocialIcon
-              url="https://www.instagram.com/captain24tyagi/"
-              fgColor="white"
-              bgColor="transparent"
-            />
-
+            
            </motion.div>
 
            <motion.div

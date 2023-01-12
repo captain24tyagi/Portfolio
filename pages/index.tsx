@@ -35,27 +35,27 @@ export default function Home({ page, socials, experiences, skills, projects }: P
       <Header socials={socials}/>
 
       <section id='profile' className='snap-start'>
-        <Profile/>
+        <Profile page={page} />
       </section>
 
       <section id='about' className='snap-center'>
-        <About/>
+        <About page={page} />
       </section>
 
       <section id='workexperience' className='snap-center'>
-        <Workexperience/>
+        <Workexperience experiences={experiences} />
       </section>
 
       <section id='skills' className='snap-center'>
-        <Skills/>
+        <Skills skills={skills} />
       </section>
 
       <section id='projects' className='snap-start'>
-        <Projects/>
+        <Projects projects={projects} />
       </section>
 
       <section id='contact' className='snap-center'>
-        <Contact/>
+        <Contact page={page} />
       </section>
     </div>
   )
@@ -74,7 +74,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       experiences,
       skills,
       socials,
-      projects
+      projects,
     },
 
     revalidate: 10,

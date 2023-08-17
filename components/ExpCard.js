@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function ExpCard({ title, company, image, date, point1, point2, point3, point4 }) {
 
   return (
-    <article className='flex flex-col font-mono rounded-lg items-center space-y-5 flex-shrink-0 w-[500px]
+    <article className='flex flex-col font-mono rounded-lg items-center space-y-5 flex-shrink-0 w-[400px]
      md:w-[400px] mt-10 md:mt-20 xl:w-[600px] snap-center p-5 md:p-10 bg-[#404040] hover:opacity-90 opacity-60 
      transition-opacity duration-200 overflow-hidden cursor-pointer text-white'>
         <motion.img
@@ -16,15 +16,15 @@ export default function ExpCard({ title, company, image, date, point1, point2, p
           transition={{ duration: 1.2 }}
           whileInView={{ opacity: 1, y: 1 }}
           viewport={{ once: true }}
-          className='w-28 h-28 rounded-full object-cover object-top'
+          className='w-24 h-24 md:w-28 md:h-28 rounded-full object-cover object-top'
           src={image}
           alt='/'
         />
 
         <div className='px-0 md:px-10'>
-           <h4 className='text-3xl font-light text-yellow-400'>{title}</h4>
-           <p className='font-bold text-2xl mt-1'>{company}</p>
-           <p className='uppercase py-5 ml-5 text-white'>
+           <h4 className='md:text-3xl text-md font-light text-yellow-400'>{title}</h4>
+           <p className='font-bold text-xs md:text-2xl mt-1'>{company}</p>
+           <p className='uppercase py-5 ml-5 text-sm md:text-lg text-white'>
               {date}
             </p>
           

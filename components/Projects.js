@@ -41,20 +41,20 @@ export default function Projects() {
             whileInView={{ opacity: 1, y:-50 }}
             transition={{ duration: 1.2 }}
             src={project.image}
-            className='mt-10'
+            className='mt-20 top-10 md:top-0'
             alt='/'
             height={100}
             width={400}
           />
-          <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-            <h4 className='text-3xl font-semibold text-blue-100/80 text-center'>
+          <div className='space-y-10 px-0 md:px-10 max-w-6xl mb-10'>
+            <h4 className='text-lg md:text-3xl font-semibold text-blue-100/80 text-center'>
               <span className='text-blue-300'>
                   Project {project.id} of {indexes.length}: {" "}
               </span>
                 {project.name}
             </h4>
 
-            <p className="text-lg xl:text-center md:text-left">
+            <p className="text-sm md:text-lg xl:text-center md:text-left">
                 {project.description}
             </p>
 

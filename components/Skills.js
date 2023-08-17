@@ -18,11 +18,11 @@ export default function Skills() {
      
     <motion.div 
     className='h-screen flex flex-col font-mono relative items-center text-center justify-evenly mx-auto'>
-        <h3 className='uppercase absolute text-blue-200 tracking-[10px] text-3xl top-24'>
+        <h3 className='uppercase absolute text-blue-200 tracking-[10px] text-3xl lg:top-10 top-20'>
             Skills
         </h3>
 
-        <h3 className='uppercase absolute text-white tracking-[3px] text-3sm top-36'>
+        <h3 className='uppercase absolute text-white tracking-[3px] text-3sm lg:top-20 top-28'>
             Hover over a skill for skill proficiency
         </h3>
 

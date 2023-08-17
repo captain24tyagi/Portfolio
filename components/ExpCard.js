@@ -6,7 +6,7 @@ export default function ExpCard({ title, company, image, date, point1, point2, p
 
   return (
     <article className='flex flex-col font-mono rounded-lg items-center space-y-5 flex-shrink-0 w-[500px]
-     md:w-[400px] mt-20 xl:w-[600px] snap-center p-10 bg-[#404040] hover:opacity-90 opacity-60 
+     md:w-[400px] mt-10 md:mt-20 xl:w-[600px] snap-center p-5 md:p-10 bg-[#404040] hover:opacity-90 opacity-60 
      transition-opacity duration-200 overflow-hidden cursor-pointer text-white'>
         <motion.img
           initial={{

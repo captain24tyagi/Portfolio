@@ -8,7 +8,7 @@ export default function About() {
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1.5 }}
     className="flex flex-col font-mono relative text-center h-screen items-center md:flex-row max-w-7xl justify-evenly mx-auto">
-        <h3 className="text-3xl absolute uppercase top-24 font-mono tracking-[10px] text-blue-100 ">
+        <h3 className="text-3xl absolute uppercase top-24 lg:top-10 font-mono tracking-[10px] text-blue-100 ">
             About
         </h3>
         <motion.img

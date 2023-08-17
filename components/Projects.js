@@ -26,7 +26,7 @@ export default function Projects() {
      viewport={{ once: true }}
      className='h-screen flex flex-col relative font-mono justify-evenly overflow-hidden z-0 md:flex-row text-left max-w-full items-center mx-auto'
     >
-    <h3 className='top-24 text-3xl absolute tracking-[10px] uppercase text-blue-200'>Projects</h3>
+    <h3 className='top-24 lg:top-10 text-3xl absolute tracking-[10px] uppercase text-blue-200'>Projects</h3>
 
        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 pt-20 scrollbar scrollbar-track-black/20 scrollbar-thumb-[#93C5FD]'>
        {projects.map((project) => (

@@ -23,7 +23,7 @@ export default function Contact () {
     }
 
   return (
-    <div className="h-screen justify-between items-center mx-auto w-fit mt-20 top-20 max-w-7xl pt-20 bottom-20">
+    <div className="h-full justify-between items-center mx-auto w-fit top-10 max-w-4xl md:max-w-7xl pt-20 bottom-20">
       <h1 className="mt-20 mx-auto font-mono text-3xl top-20 mb-0 text-center uppercase tracking-[10px] text-blue-200 pt-10">
         Contact
       </h1>

@@ -40,7 +40,7 @@ export default function Skills() {
              key={skill.title}
              skill={skill.image}
              skillprog={skill.progress}
-             directionLeft
+             directionLeft={directionLeft}
             />
           ))}
           

@@ -27,12 +27,12 @@ export default function Profile() {
        />
       <div className="z-20">
        <h2 className="uppercase text-sm text-blue-200 pb-5 tracking-widest ">Developer</h2>
-       <h1 className="text-5xl lg:text-3xl font-sans font-semibold px-10 text-yellow-300">
+       <h1 className="text-lg md:text-3xl font-sans font-semibold px-10 text-yellow-300">
         <span className="font-bold">{text}</span>
         <Cursor cursorColor="#FB923C"/>
        </h1>
      
-      <div className="pt-5 space-x-10 font-mono">
+      <div className="pt-5 space-x-5 font-mono md:space-x-10">
         <Link href='#about'>
         <button className='herobutton'>ABOUT</button>
         </Link>

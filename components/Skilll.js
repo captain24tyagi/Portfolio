@@ -14,7 +14,7 @@ export default function Skilll({ directionLeft, skill, skillprog }) {
          whileInView={{ opacity: 1, x: 0 }}
          src={skill}
          alt='/'
-         className='rounded-full object-cover h-20 w-20 xl:w-24 xl:h-24 border border-black'
+         className='rounded-full object-cover md:h-20 md:w-20 h-16 w-16 xl:w-24 xl:h-24 border border-black'
         />
 
         <div className='absolute opacity-0 group-hover:opacity-70 transition-duration-300 ease-in-out group-hover: bg-white h-20 w-20 xl:h-24 xl:w-24 rounded-full'>

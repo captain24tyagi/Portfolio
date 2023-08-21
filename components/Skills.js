@@ -26,7 +26,7 @@ export default function Skills() {
             Hover over a skill for skill proficiency
         </h3>
 
-        <div className=' grid grid-cols-4 gap-5 pt-20'>
+        <div className=' grid grid-cols-4 gap-5 pt-15 mt-5'>
           {skills.slice(0, skills.length/2).map((skill) => (
             <Skilll
              key={skill.title}

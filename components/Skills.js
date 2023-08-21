@@ -27,7 +27,7 @@ export default function Skills() {
         </h3>
 
         <div className=' grid grid-cols-4 gap-5 pt-20'>
-          {skills.slice(0, skills.length / 2).map((skill) => (
+          {skills.slice(0, skills.length/2).map((skill) => (
             <Skilll
              key={skill.title}
              skill={skill.image}
@@ -35,7 +35,7 @@ export default function Skills() {
             />
           ))}
 
-          {skills.slice(skills.length / 2, skills.length).map((skill) => (
+          {skills.slice(skills.length/2, skills.length).map((skill) => (
             <Skilll
              key={skill.title}
              skill={skill.image}
